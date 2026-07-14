@@ -6,7 +6,10 @@ count = 0
 while True:   
    num = int(input("Please enter your input to guess a num: ")) 
    count +=1
-   if count==7:
+   if random_number==num:
+      print(f"You have guessed a correct number {num}")
+      break
+   elif count==7:
       print(f"You have used up all your attempts.\nYou had to guess the number {random_number}.")
       break
    if random_number < num:
@@ -19,7 +22,4 @@ while True:
 
 print(f"You have done {count} attempts to guess a number.")
 
-
-
-# print(f"random genereted number is {random_number}")
 
