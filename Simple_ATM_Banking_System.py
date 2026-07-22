@@ -16,7 +16,7 @@ def withdraw():
        withdraw_attempts +=1
        if verification == pin_code:
            withdraw_amount = int(input("Enter the amount that you want to withdraw: "))
-           if withdraw_amount < Balance:
+           if withdraw_amount <= Balance:
               print("----Successfuly Withdrawn----")
               Balance = Balance - withdraw_amount
               print(f"Your remaining balance is {Balance}")
