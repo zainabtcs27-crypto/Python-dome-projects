@@ -1,0 +1,9 @@
+Review and refine w01_research_question.ipynb in Jupyter/Colab
+Document data preprocessing methodology for the Capstone report
+Draft the next phase of research questions based on w01 findings
+Sync with project advisor regarding Capstone literature review
+Refactor main app.py routing structures
+Test and optimize audio processing latency in AI Voice Emotions
+Done
+Stage, commit, and push stable local changes to remote GitHub repo
+Audit code for unused dependencies or redundant debug prints
