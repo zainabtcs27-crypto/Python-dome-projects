@@ -18,11 +18,17 @@ def decoding(word):
         cleaned_word = word[3:-3]
         return cleaned_word[-1] + cleaned_word[:-1]
 
-word = str(input("Enter your word : "))
+sentence = str(input("Please Enter your sentence : "))
+word_list = sentence.split()
 
-User_choice = str(input("Do you want to code or decode the word? \n If you want to decode your word must      contain more than 8 letters (Enter 'code' or 'decode'): ")).lower()
+User_choice = str(input("Do you want to code or decode the sentence? (Enter 'code' or 'decode'): ")).lower()
+new_word_list = []
+for word in word_list:
+    if User_choice == 'code':
+        new_word_list.append(coding(word))
+        # print("Your coded word is: ",coding(word))
+    else:
+        new_word_list.append(decoding(word))
+        # print("Your decoded word is: ",decoding(word))
+print("Your resulted sentence is: ", ' '.join(new_word_list))
 
-if User_choice == 'code':
-    print("Your coded word is: ",coding(word))
-else:
-    print("Your decoded word is: ",decoding(word))
